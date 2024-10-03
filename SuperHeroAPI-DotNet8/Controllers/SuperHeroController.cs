@@ -52,9 +52,12 @@ namespace SuperHeroAPI_DotNet8.Controllers
         {
             var hero = await _context.SuperHeroes.FindAsync(id);
 
-            if (hero == null) return NotFound("Hero not found");
+            //if (hero == null) return NotFound("Hero not found");
+            /*if (hero == null) return BadRequest("Hero not found");
 
-            return Ok(hero);
+            return Ok(hero);*/
+            return hero == null ? NotFound("Hero not found") : Ok(hero);
+
         }
 
     }
