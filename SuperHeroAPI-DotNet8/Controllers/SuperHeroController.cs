@@ -12,7 +12,8 @@ namespace SuperHeroAPI_DotNet8.Controllers
     public class SuperHeroController : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetAllHeroes()
+        //public async Task<IActionResult> GetAllHeroes()
+        public async Task<ActionResult<List<SuperHero>>> GetAllHeroes() // like this we will see a new SuperHero Schema and a right example value in Swagger
         {
             var heroes = new List<SuperHero>
             {
