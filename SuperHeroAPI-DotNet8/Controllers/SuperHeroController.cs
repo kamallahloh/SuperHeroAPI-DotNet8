@@ -48,7 +48,7 @@ namespace SuperHeroAPI_DotNet8.Controllers
         [HttpGet("{id}")]
         // to spec the route we can do this
         //[Route("{id}")]
-        public async Task<ActionResult<List<SuperHero>>> GetHero(int id) 
+        public async Task<ActionResult<SuperHero>> GetHero(int id) 
         {
             var hero = await _context.SuperHeroes.FindAsync(id);
 
@@ -60,5 +60,16 @@ namespace SuperHeroAPI_DotNet8.Controllers
 
         }
 
+        [HttpPost]
+        // here better to use DTO Data Transfer Object for only the fields in your request not the actual SuperHero Class.
+        public async Task<ActionResult<List<SuperHero>>> AddHero(SuperHero hero)
+        {
+            _context.SuperHeroes.Add(hero); // only add not SAVE
+
+            await _context.SaveChangesAsync();
+
+            //return Ok(await GetAllHeroes()); NOT WORKING since we don't use microservices
+            return Ok(await _context.SuperHeroes.ToListAsync());
+        }
     }
 }
