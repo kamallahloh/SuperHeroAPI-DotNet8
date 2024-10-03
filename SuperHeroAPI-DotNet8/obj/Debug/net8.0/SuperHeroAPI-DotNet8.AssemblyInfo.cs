@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuperHeroAPI-DotNet8")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d7a785b4f8cc1cfc5d2ac2d2d16b05b10d1d745")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a01b717f34ce840d05dd4a75d7f38f677819407b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuperHeroAPI-DotNet8")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuperHeroAPI-DotNet8")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
