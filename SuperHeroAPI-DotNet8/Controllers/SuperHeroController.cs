@@ -91,5 +91,21 @@ namespace SuperHeroAPI_DotNet8.Controllers
 
             return Ok(await _context.SuperHeroes.ToListAsync());
         }
+
+        [HttpDelete]
+        public async Task<ActionResult<List<SuperHero>>> DeleteHero(int id)
+        {
+            var dbHero = await _context.SuperHeroes.FindAsync(id);
+            //SuperHero? dbHero = await _context.SuperHeroes.FindAsync(updatedHero.Id); better to use an accual class name not an unknown variable.
+
+            if (dbHero == null) return NotFound("Hero not found");
+
+            _context.SuperHeroes.Remove(dbHero);
+
+            await _context.SaveChangesAsync();
+
+            return Ok("Hero Deleted");
+        }
+
     }
 }
