@@ -4,6 +4,7 @@ namespace SuperHeroAPI_DotNet8.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    // end point https://localhost:7022/WeatherForecast
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
