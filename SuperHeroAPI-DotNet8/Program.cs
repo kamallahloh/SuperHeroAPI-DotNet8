@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options =>
 {
     // UseSqlServer right click on projectname DotNet8 then Manage NuGet Packages and add Microsoft.EntityFrameworkCore.SqlServer
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")); // from appsettings.json
+    options.UseSqlServer(connectionString: builder.Configuration.GetConnectionString("DefaultConnection")); // from appsettings.json
 });  // needed for migration from NuGet Packages and add Microsoft.EntityFrameworkCore.Tools
      // you can Use the CLI or this method
      // then from Tools bar => NuGet Packages Manager => Package Manager Console
