@@ -11,14 +11,17 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // dependency injection
+// Register the DB Context and tell the Entity which provider to use ==>
 builder.Services.AddDbContext<DataContext>(options =>
 {
     // UseSqlServer right click on projectname DotNet8 then Manage NuGet Packages and add Microsoft.EntityFrameworkCore.SqlServer
-    options.UseSqlServer(connectionString: builder.Configuration.GetConnectionString("DefaultConnection")); // from appsettings.json
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")); // from appsettings.json
 });  // needed for migration from NuGet Packages and add Microsoft.EntityFrameworkCore.Tools
-     // you can Use the CLI or this method
+     // you can Use the CLI or this method but you need to be in the same directory not global
      // then from Tools bar => NuGet Packages Manager => Package Manager Console
+     //
      // Add-Migration Initial
+     //
      // Update-DataBase   -> will not work yet since Only the invariant culture is supported in globalization-invariant mode -> from the project file make it False
 
 
