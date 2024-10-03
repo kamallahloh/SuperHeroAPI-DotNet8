@@ -31,3 +31,5 @@ D:\Training\C#\SuperHeroAPI-DotNet8\SuperHeroAPI-DotNet8\obj\Debug\net8.0\refint
 D:\Training\C#\SuperHeroAPI-DotNet8\SuperHeroAPI-DotNet8\obj\Debug\net8.0\SuperHeroAPI-DotNet8.pdb
 D:\Training\C#\SuperHeroAPI-DotNet8\SuperHeroAPI-DotNet8\obj\Debug\net8.0\SuperHeroAPI-DotNet8.genruntimeconfig.cache
 D:\Training\C#\SuperHeroAPI-DotNet8\SuperHeroAPI-DotNet8\obj\Debug\net8.0\ref\SuperHeroAPI-DotNet8.dll
+D:\Training\C#\SuperHeroAPI-DotNet8\SuperHeroAPI-DotNet8\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Training\C#\SuperHeroAPI-DotNet8\SuperHeroAPI-DotNet8\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
