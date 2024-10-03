@@ -47,6 +47,32 @@
   },
   {
     "ContainingType": "SuperHeroAPI_DotNet8.Controllers.SuperHeroController",
+    "Method": "UpdateHero",
+    "RelativePath": "api/SuperHero",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatedHero",
+        "Type": "SuperHeroAPI_DotNet8.Entities.SuperHero",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SuperHeroAPI_DotNet8.Entities.SuperHero, SuperHeroAPI-DotNet8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SuperHeroAPI_DotNet8.Controllers.SuperHeroController",
     "Method": "GetHero",
     "RelativePath": "api/SuperHero/{id}",
     "HttpMethod": "GET",
