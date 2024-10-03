@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SuperHeroAPI_DotNet8.Entities;
 
 namespace SuperHeroAPI_DotNet8.Controllers
 {
@@ -11,6 +12,21 @@ namespace SuperHeroAPI_DotNet8.Controllers
     public class SuperHeroController : ControllerBase
     {
         [HttpGet]
+        public async Task<IActionResult> GetAllHeroes()
+        {
+            var heroes = new List<SuperHero>
+            {
+                new() {
+                    Id = 1,
+                    Name = "SpiderMan",
+                    FirstName = "Peter",
+                    LastName = "Parker",
+                    Place = "New York"
+                }
+            };
+
+            return Ok(heroes);
+        }
 
     }
 }

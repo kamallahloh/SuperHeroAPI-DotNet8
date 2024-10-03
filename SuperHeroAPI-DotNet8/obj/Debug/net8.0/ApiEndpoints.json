@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "SuperHeroAPI_DotNet8.Controllers.SuperHeroController",
+    "Method": "GetAllHeroes",
+    "RelativePath": "api/SuperHero",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SuperHeroAPI_DotNet8.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

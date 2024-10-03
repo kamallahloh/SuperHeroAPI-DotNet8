@@ -1,4 +1,4 @@
-﻿namespace SuperHeroAPI_DotNet8.Controllers.Entities
+﻿namespace SuperHeroAPI_DotNet8.Entities
 {
     public class SuperHero
     {
